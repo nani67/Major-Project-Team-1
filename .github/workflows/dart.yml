@@ -16,7 +16,5 @@ jobs:
       run: flutter pub get
     - name: Check for flutter errors
       run: flutter doctor
-    - name: Run tests
-      run: flutter pub run test
     - name: Web Application building
       run: flutter build web
