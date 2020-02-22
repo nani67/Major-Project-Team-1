@@ -22,3 +22,8 @@ jobs:
       run: flutter doctor
     - name: Web Application building
       run: flutter build web
+    - uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_CLIENT_SECRET }}
